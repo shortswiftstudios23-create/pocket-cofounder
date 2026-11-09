@@ -1,0 +1,44 @@
+{
+ "expo": {
+  "name": "Pocket Cofounder",
+  "slug": "pocket-cofounder",
+  "scheme": "pocketcofounder",
+  "userInterfaceStyle": "dark",
+  "backgroundColor": "#050505",
+  "plugins": [
+   "expo-router",
+   [
+    "expo-notifications",
+    {
+     "color": "#A3E635",
+     "icon": "./assets/notification-icon.png"
+    }
+   ],
+   [
+    "expo-image-picker",
+    {
+     "photosPermission": "Pick a screenshot or photo as proof.",
+     "cameraPermission": "Take a photo as proof."
+    }
+   ]
+  ],
+  "web": {
+   "bundler": "metro",
+   "output": "single",
+   "favicon": "./assets/favicon.png"
+  },
+  "android": {
+   "package": "app.pocketcofounder",
+   "adaptiveIcon": {
+    "foregroundImage": "./assets/adaptive-icon.png",
+    "backgroundColor": "#050505"
+   }
+  },
+  "icon": "./assets/icon.png",
+  "splash": {
+   "image": "./assets/splash-icon.png",
+   "resizeMode": "contain",
+   "backgroundColor": "#050505"
+  }
+ }
+}
